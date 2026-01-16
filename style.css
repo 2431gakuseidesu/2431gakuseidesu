@@ -39,10 +39,11 @@ body {
   margin-top: 6px;
 }
 
-.coin{
-  width: min(320px, 88vw);
-  height:auto;
-  filter: drop-shadow(0 10px 24px rgba(0,0,0,.55));
+.coin img {
+  width: 90%;
+  max-width: 380px;
+  margin: 40px auto 20px;
+  display: block;
 }
 
 .cta{
@@ -180,6 +181,13 @@ body {
   opacity:.7;
   text-align:center;
   font-size: 12px;
+}
+
+.buy-btn img {
+  width: 60%;
+  max-width: 220px;
+  margin: 30px auto;
+  display: block;
 }
 
 /* CTA hover画像差し替え */
