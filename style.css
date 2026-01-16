@@ -127,7 +127,7 @@ img{ max-width: 100%; height: auto; }
 
 .about-row{
   display:grid;
-  grid-template-columns: 110px 1fr;
+  grid-template-columns: 130px 1fr;
   gap: 10px;
   align-items:center;
 }
@@ -144,17 +144,20 @@ img{ max-width: 100%; height: auto; }
 
 .ca{
   display:flex;
-  flex-wrap: wrap;
-  align-items:center;
+  flex-direction: column;  /* 縦並び（スマホで見やすい） */
+  align-items: flex-start;  /* ←左揃え */
   gap: 10px;
 }
 
 .ca code{
-  padding: 8px 10px;
-  border-radius: 10px;
-  border: 1px solid rgba(255,255,255,.16);
-  background: rgba(0,0,0,.35);
+  width: 100%;              /* ←揃う */
+  max-width: 520px;         /* ←伸びすぎ防止 */
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.22);
+  background: rgba(0,0,0,.38);
   font-size: 13px;
+  line-height: 1.25;
 }
 
 /* Copied表示（Copyボタンの左隣） */
@@ -300,5 +303,20 @@ img{ max-width: 100%; height: auto; }
   .step{
     flex: 1;
   }
+}
+
+/* CA行だけ上揃えにする */
+.ca-row{
+  align-items: start;
+}
+
+/* CAラベルを強調 */
+.ca-row .label{
+  font-weight: 800;
+  color: rgba(255,255,255,.92);
+}
+
+.ca-row .ca code{
+  box-shadow: 0 0 0 1px rgba(255,215,0,.18), 0 10px 24px rgba(0,0,0,.35);
 }
 
