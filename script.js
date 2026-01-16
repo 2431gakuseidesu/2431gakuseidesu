@@ -16,7 +16,7 @@ copyBtn?.addEventListener("click", async () => {
     await navigator.clipboard.writeText(text);
     showHint("Copied ✅");
   } catch (e) {
-    // iOS/Safari等でclipbaord制限がある場合のフォールバック
+    // iOS/Safari等のフォールバック
     const ta = document.createElement("textarea");
     ta.value = text;
     ta.style.position = "fixed";
