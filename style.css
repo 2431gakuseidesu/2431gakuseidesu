@@ -325,3 +325,19 @@ img{ max-width: 100%; height: auto; }
   .coin-wrap{ width: min(380px, 92vw); }
 }
 
+/* スマホではBuyボタン2つを必ず横並びにする */
+@media (max-width: 520px){
+  .cta-row{
+    flex-wrap: nowrap;     /* 折り返し禁止 */
+    gap: 8px;
+  }
+
+  .img-btn{
+    flex: 1;               /* 2つを均等に */
+  }
+
+  .img-btn img{
+    width: 100%;           /* ボタンを親幅いっぱいに */
+    max-width: none;
+  }
+}
