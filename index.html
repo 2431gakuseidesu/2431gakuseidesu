@@ -1,93 +1,61 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
   <title>2431GAKUSEIDESU</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="container">
 
-    <!-- Coin -->
-    <div class="coin">
-      <img src="images/coin_main.png" alt="2431GAKUSEIDESU coin">
-    </div>
-
-    <!-- Buy (top) -->
-    <a class="buy-btn" href="https://join.pump.fun/HSag/4drhm9bt" target="_blank" rel="noopener">
-      <img src="images/buy_pumpfun.png" alt="Buy on Pump.fun">
-    </a>
-
-    <!-- About -->
-    <div class="card">
-      <h2>About</h2>
-
-      <div class="row">
-        <div class="label">Token Name</div>
-        <div class="value">$2431GAKUSEIDESU</div>
-      </div>
-
-      <div class="row">
-        <div class="label">Chain</div>
-        <div class="value">Solana</div>
-      </div>
-
-      <div class="ca-wrap">
-        <div class="label">CA</div>
-        <div class="ca" id="caText">9msnoqekR1pq67xim44WdiZDJHcnoy6Xg4BK2msSpump</div>
-        <button class="copy-btn" id="copyBtn" type="button">
-          <img src="images/icon_copyca.png" alt="">
-          Copy
-        </button>
-      </div>
-
-      <div style="margin-top:10px; opacity:.85; font-size:13px; font-weight:700;">
-        2431GAKUSEIDESU / 24歳、学生
-      </div>
-    </div>
-
-    <!-- How to Buy -->
-    <div class="card">
-      <h2>How to Buy</h2>
-      <div class="steps">
-        <div class="step">
-          <img src="images/icon_phantom.png" alt="">
-          <span>1. Get Phantom Wallet</span>
-        </div>
-        <div class="step">
-          <img src="images/icon_pumpfun.png" alt="">
-          <span>2. Paste Contract Address</span>
-        </div>
-        <div class="step">
-          <img src="images/icon_swap.png" alt="">
-          <span>3. Swap</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Community -->
-    <div class="card">
-      <h2>Join the Community</h2>
-      <div class="icons">
-        <a href="https://x.com/2431kobuseidesu?s=21&t=leZ_uma8GZmxIWh4jNC-mg" target="_blank" rel="noopener">
-          <img src="images/icon_x.png" alt="X">
-        </a>
-        <a href="https://x.com/i/communities/2011371751469638008" target="_blank" rel="noopener">
-          <img src="images/icon_community.png" alt="Community">
-        </a>
-      </div>
-      <div style="margin-top:14px; font-size:12px; opacity:.65;">
-        This is a meme coin with no intrinsic value. Official links only.
-      </div>
-    </div>
-
+  <!-- メインコイン -->
+  <div class="coin">
+    <img src="images/coin_main.png" alt="coin">
   </div>
 
-  <!-- Mobile fixed Buy button -->
-  <a class="buy-fixed" href="https://join.pump.fun/HSag/4drhm9bt" target="_blank" rel="noopener">
+  <!-- Buy ボタン -->
+  <a class="buy-btn" href="https://join.pump.fun/HSag/4drhm9bt" target="_blank">
     <img src="images/buy_pumpfun.png" alt="Buy on Pump.fun">
   </a>
+
+  <!-- About -->
+  <section class="about">
+    <p><b>Token Name:</b> 2431GAKUSEIDESU</p>
+    <p><b>Chain:</b> Solana</p>
+
+    <div class="ca">
+      <span>9msnoqekR1pq67xim44WdiZDJHcnoy6Xg4BK2msSpump</span>
+      <button onclick="copyCA()">Copy</button>
+    </div>
+  </section>
+
+  <!-- How to Buy -->
+  <section class="howto">
+    <div>
+      <img src="images/icon_phantom.png">
+      <p>1. Get Phantom</p>
+    </div>
+    <div>
+      <img src="images/icon_copyca.png">
+      <p>2. Paste CA</p>
+    </div>
+    <div>
+      <img src="images/icon_swap.png">
+      <p>3. Swap</p>
+    </div>
+  </section>
+
+  <!-- Links -->
+  <section class="links">
+    <a href="https://x.com/2431kobuseidesu?s=21&t=leZ_uma8GZmxIWh4jNC-mg" target="_blank">
+      <img src="images/icon_x.png">
+    </a>
+
+    <a href="https://x.com/i/communities/2011371751469638008" target="_blank">
+      <img src="images/icon_community.png">
+    </a>
+  </section>
 
   <script src="script.js"></script>
 </body>
