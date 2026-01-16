@@ -1,61 +1,122 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>2431GAKUSEIDESU</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="2431GAKUSEIDESU - Solana meme coin" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <main class="page">
+    <!-- HERO -->
+    <header class="hero">
+      <div class="coin-wrap">
+        <img class="coin" src="images/coin.png" alt="2431GAKUSEIDESU coin" />
+      </div>
 
-  <!-- メインコイン -->
-  <div class="coin">
-    <img src="images/coin_main.png" alt="coin">
-  </div>
+      <!-- Buy button (画像ボタン) -->
+      <a class="buy-btn" href="https://join.pump.fun/HSag/4drhm9bt" target="_blank" rel="noopener">
+        <span class="buy-btn-inner">
+          <img class="buy-icon" src="images/icon_pumpfun.png" alt="" />
+          <span class="buy-text">Buy on Pump.fun</span>
+        </span>
+      </a>
+    </header>
 
-  <!-- Buy ボタン -->
-  <a class="buy-btn" href="https://join.pump.fun/HSag/4drhm9bt" target="_blank">
-    <img src="images/buy_pumpfun.png" alt="Buy on Pump.fun">
-  </a>
+    <!-- ABOUT -->
+    <section class="card">
+      <h2 class="section-title">About</h2>
 
-  <!-- About -->
-  <section class="about">
-    <p><b>Token Name:</b> 2431GAKUSEIDESU</p>
-    <p><b>Chain:</b> Solana</p>
+      <div class="about-grid">
+        <div class="about-row">
+          <div class="label">Token Name</div>
+          <div class="value">$2431GAKUSEIDESU</div>
+        </div>
 
-    <div class="ca">
-      <span>9msnoqekR1pq67xim44WdiZDJHcnoy6Xg4BK2msSpump</span>
-      <button onclick="copyCA()">Copy</button>
-    </div>
-  </section>
+        <div class="about-row">
+          <div class="label">Chain</div>
+          <div class="value">Solana</div>
+        </div>
 
-  <!-- How to Buy -->
-  <section class="howto">
-    <div>
-      <img src="images/icon_phantom.png">
-      <p>1. Get Phantom</p>
-    </div>
-    <div>
-      <img src="images/icon_copyca.png">
-      <p>2. Paste CA</p>
-    </div>
-    <div>
-      <img src="images/icon_swap.png">
-      <p>3. Swap</p>
-    </div>
-  </section>
+        <div class="about-row ca-row">
+          <div class="label">CA</div>
+          <div class="value ca">
+            <code id="caText">9msnoqekR1pq67xim44WdiZDJHcnoy6Xg4BK2msSpump</code>
 
-  <!-- Links -->
-  <section class="links">
-    <a href="https://x.com/2431kobuseidesu?s=21&t=leZ_uma8GZmxIWh4jNC-mg" target="_blank">
-      <img src="images/icon_x.png">
-    </a>
+            <button class="copy-btn" id="copyBtn" type="button" aria-label="Copy contract address">
+              <img src="images/icon_copy.png" alt="" />
+              <span>Copy</span>
+            </button>
+          </div>
+        </div>
 
-    <a href="https://x.com/i/communities/2011371751469638008" target="_blank">
-      <img src="images/icon_community.png">
-    </a>
-  </section>
+        <p class="hint" id="copyHint" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <!-- HOW TO BUY -->
+    <section class="card">
+      <h2 class="section-title">How to Buy</h2>
+
+      <ol class="steps">
+        <li class="step">
+          <div class="step-icon">
+            <img src="images/icon_phantom.png" alt="Phantom" />
+          </div>
+          <div class="step-text">
+            <div class="step-title">1. Get Phantom Wallet</div>
+            <div class="step-sub">Install Phantom and create a wallet</div>
+          </div>
+        </li>
+
+        <li class="step">
+          <div class="step-icon">
+            <img src="images/icon_copy.png" alt="Copy" />
+          </div>
+          <div class="step-text">
+            <div class="step-title">2. Paste Contract Address</div>
+            <div class="step-sub">Copy CA and paste in Phantom</div>
+          </div>
+        </li>
+
+        <li class="step">
+          <div class="step-icon">
+            <img src="images/icon_swap.png" alt="Swap" />
+          </div>
+          <div class="step-text">
+            <div class="step-title">3. Swap</div>
+            <div class="step-sub">Swap SOL → $2431GAKUSEIDESU</div>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- COMMUNITY -->
+    <section class="card">
+      <h2 class="section-title">Join the Community</h2>
+
+      <div class="socials">
+        <a class="social" href="https://x.com/2431kobuseidesu?s=21&t=leZ_uma8GZmxIWh4jNC-mg" target="_blank" rel="noopener">
+          <img src="images/icon_x.png" alt="X" />
+        </a>
+
+        <a class="social" href="https://x.com/i/communities/2011371751469638008" target="_blank" rel="noopener">
+          <img src="images/icon_community.png" alt="Community" />
+        </a>
+
+        <!-- pump.fun 公式リンクなど追加したい場合 -->
+        <a class="social" href="https://join.pump.fun/HSag/4drhm9bt" target="_blank" rel="noopener">
+          <img src="images/icon_pumpfun.png" alt="Pump.fun" />
+        </a>
+      </div>
+
+      <p class="footer-note">
+        This is a meme coin with no intrinsic value. Official links only.
+      </p>
+    </section>
+  </main>
 
   <script src="script.js"></script>
 </body>
